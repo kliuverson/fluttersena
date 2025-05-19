@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:test_apk/bloc/home_bloc.dart';
+import 'package:lottie/lottie.dart';
 
 class InitialView extends StatelessWidget {
   const InitialView({super.key});
@@ -18,6 +19,7 @@ class InitialView extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min, // Solo ocupa el espacio necesario
               children: [
+                Lottie.asset('lib/assets/eyeAnim.json'),
                 // Título principal con estilo grande y negrita
                 Text(
                   '¡Bienvenido!',
